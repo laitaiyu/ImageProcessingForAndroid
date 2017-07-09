@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Style.Camera</string>
+    <string name="action_settings">Settings</string>
+    
+	<string name="Str_Capture">Take a picture</string>
+	<string name="txtView">圖檔</string>
+	<string name="strGray">Gray</string>
+	<string name="strComic">Comic</string>
+		
+</resources>

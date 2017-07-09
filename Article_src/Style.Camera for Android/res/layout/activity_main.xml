@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+    
+	    <Button
+	        android:id="@+id/btn_Capture"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/Str_Capture" />
+
+	    <RadioGroup 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:checkedButton="@+id/lunch"
+	        android:id="@+id/rdg_Main"
+	        >
+	        
+	        <RadioButton android:id="@+id/rdb_Gray"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/strGray" >
+	        </RadioButton>
+
+			<RadioButton android:id="@+id/rdb_Comic"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/strComic" >
+	        </RadioButton>
+				        
+	    </RadioGroup>
+	    
+	    <TextView
+	        android:id="@+id/txtView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/txtView" />
+
+	    <ImageView
+	        android:id="@+id/ImgView"
+	        android:layout_width="fill_parent"
+	        android:layout_height="300dp"
+	        android:contentDescription="@string/txtView"
+	        android:scaleType="fitStart" />
+	    
+		<SurfaceView
+	    	android:id="@+id/surView_Camera"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="200dp"
+	    	android:layout_marginLeft="0dp"
+	    	android:minHeight="200dp"
+	    	android:minWidth="250dp"
+	    >
+		</SurfaceView>
+	</LinearLayout>
+		
+</RelativeLayout>
